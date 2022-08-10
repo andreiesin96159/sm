@@ -89,7 +89,7 @@
         width: 590px;
         height: 946px;
         background: #FFFFFF;
-       
+
     }
 
     @media (min-width: @tablet-width) {
@@ -113,9 +113,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    
+
 
     }
+
     @media (min-width: @tablet-width) {
         display: flex;
         flex-wrap: wrap;
@@ -123,6 +124,7 @@
         gap: 7px;
 
     }
+
     @media (min-width: @desktop-width) {
 
         display: flex;
@@ -156,6 +158,10 @@
     }
 }
 
+.form__button:hover {
+    background: #28a2ce;
+}
+
 .chooseTheTheme {
     width: 478px;
     height: 56px;
@@ -187,8 +193,9 @@
         appearance: none;
         margin-bottom: 5px;
         margin-top: 30px;
-       
+
     }
+
     @media (min-width: @tablet-width) {
         font-family: 'Circe', sans-serif;
         width: 489px;
@@ -206,6 +213,7 @@
         background-position-x: calc(100% - 15px);
         background-position-y: center;
     }
+
     @media (min-width: @desktop-width) {
         font-family: 'Circe', sans-serif;
         width: 489px;
@@ -226,10 +234,13 @@
     }
 }
 
- .firstName, .adress, .company{
+.firstName,
+.adress,
+.company {
     @media (min-width: @mobile-width) {
         margin-bottom: 10px;
     }
+
     @media (min-width: @tablet-width) {
         margin-bottom: 0;
     }
@@ -247,8 +258,9 @@
         line-height: 105%;
         padding-left: 26px;
         outline: none;
-       
+
     }
+
     @media (min-width: @tablet-width) {
         width: 214px;
         height: 62px;
@@ -295,6 +307,7 @@
     @media (min-width: @tablet-width) {
         width: 463px;
     }
+
     @media (min-width: @desktop-width) {
         width: 463px;
     }
@@ -306,11 +319,12 @@
         flex-direction: column;
         margin: 5px 0;
     }
+
     @media (min-width: @tablet-width) {
         gap: 3px;
         display: flex;
         flex-direction: row;
-        margin:  0;
+        margin: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -335,8 +349,9 @@
         justify-content: center;
         margin-top: 29px;
         align-items: flex-start;
-      
+
     }
+
     @media (min-width: @tablet-width) {
         left: -73px;
         position: relative;
@@ -452,4 +467,92 @@
         margin: 0;
         padding: 0;
     }
+}
+
+.thanks--activait--hidden {
+    display: none;
+}
+
+.thanks--activait {
+    @media (min-width: @mobile-width) {
+        z-index: 2;
+        background: rgba(21, 41, 105, 0.9);
+        height: 165%;
+        width: 100%;
+        position: absolute;
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: @tablet-width) {
+        z-index: 2;
+        background: rgba(21, 41, 105, 0.9);
+        height: 174%;
+        width: 100%;
+        position: absolute;
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (min-width: @desktop-width) {
+        z-index: 2;
+        background: rgba(21, 41, 105, 0.9);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        color: #FFFFFF;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.thanks--activait--h3 {
+    @media (min-width: @mobile-width) {
+        font-family: 'Circe';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 105%;
+    }
+
+    @media (min-width: @desktop-width) {
+        font-size: 56px;
+    }
+}
+
+.thanks--activait--p {
+    @media (min-width: @mobile-width) {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    @media (min-width: @desktop-width) {
+
+        font-size: 24px;
+    }
+}
+
+.thanks--activait--continue {
+    width: 144px;
+    height: 54px;
+    left: calc(50% - 144px/2 + 0.5px);
+    top: calc(50% - 54px/2 + 38px);
+    color: #FFFFFF;
+    background: #00AAEA;
+    border: none;
+}
+
+.thanks--activait--continue:hover {
+    background: #327086;
 }
