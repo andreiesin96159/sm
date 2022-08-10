@@ -58,7 +58,19 @@
 
 .options {
     @media (min-width: @mobile-width) {
-        width: 270px;
+        width: calc(83% - 52px);
+        background: #FFFFFF;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: start;
+        list-style-type: none;
+        height: 130px;
+    }
+    @media (min-width: @tablet-width) {
+        width: calc(47% - 43px);
         background: #FFFFFF;
         padding-bottom: 15px;
         display: flex;
@@ -71,13 +83,11 @@
     }
 
     @media (min-width: @desktop-width) {
-        width: 370px;
+        width: calc(30% - 60px);
         background: #FFFFFF;
         padding-bottom: 15px;
         display: flex;
         flex-direction: column;
-        padding-left: 30px;
-        padding-right: 30px;
         text-align: start;
         list-style-type: none;
         height: 262px;
@@ -107,6 +117,7 @@
         margin: 0;
     }
     @media (min-width: @desktop-width) {
-    font-size: 20px;
+    font-size: 19px;
+    text-align: start;
     }
 }

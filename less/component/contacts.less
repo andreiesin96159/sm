@@ -1,7 +1,7 @@
 .contacts {
     @media (min-width: @mobile-width) {
         background: #F7F9FC;
-        height: 1420px;
+        height: 1410px;
     }
 
     @media (min-width: @tablet-width) {
@@ -64,64 +64,78 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 
     @media (min-width: @tablet-width) {
         display: flex;
-        width: 800px;
-        margin: 0 auto;
+        justify-content: space-between;
         flex-direction: column;
-        align-items: center;
+        width: 720px;
+        align-items: flex-start;
     }
 
     @media (min-width: @desktop-width) {
         display: flex;
+        justify-content: space-around;
         flex-direction: row;
-        margin: 0 auto;
-        align-items: flex-start;
+        width: 1305px;
     }
 }
 
 .form {
     @media (min-width: @mobile-width) {
-        display: flex;
-        flex-direction: column;
-        width: 680px;
-        height: 852px;
+        width: 590px;
+        height: 946px;
         background: #FFFFFF;
-        gap: 9px;
-        justify-content: center;
-        align-items: center;
+       
     }
 
     @media (min-width: @tablet-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 572px;
+        width: 642px;
         height: 748px;
         background: #FFFFFF;
-        gap: 16px;
-        justify-content: center;
 
     }
 
     @media (min-width: @desktop-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+
         width: 642px;
         height: 748px;
         background: #FFFFFF;
-        gap: 16px;
+
+    }
+}
+
+.form__div {
+    @media (min-width: @mobile-width) {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        margin-left: 150px;
+    
+
+    }
+    @media (min-width: @tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+
+    }
+    @media (min-width: @desktop-width) {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+
     }
 }
 
 .form__button {
     @media (min-width: @mobile-width) {
-        width: 335px;
+        width: 325px;
         height: 54px;
         background: #00AAEA;
         font-family: 'Circe', sans-serif;
@@ -157,7 +171,6 @@
         width: 330px;
         padding-top: 20px;
         padding-bottom: 20px;
-
         border: none;
         background: url("/img//vector.svg") no-repeat #F7F9FC;
         background-position-x: calc(100% - 15px);
@@ -172,14 +185,14 @@
         border: none;
         outline: none;
         appearance: none;
-        margin-left: 147px;
+        margin-bottom: 5px;
+        margin-top: 30px;
+       
     }
-
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
         font-family: 'Circe', sans-serif;
-        width: 504px;
-        height: 56px;
-        margin: 0;
+        width: 489px;
+        margin: 0 auto;
         margin-top: 80px;
         border: none;
         background: #F7F9FC;
@@ -189,20 +202,42 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 105%;
-        position: relative;
-        left: -8px;
-        background: url("/img/Vector.svg") no-repeat #F7F9FC;
+        background: url(/img/Vector.svg) no-repeat #F7F9FC;
+        background-position-x: calc(100% - 15px);
+        background-position-y: center;
+    }
+    @media (min-width: @desktop-width) {
+        font-family: 'Circe', sans-serif;
+        width: 489px;
+        margin: 0 auto;
+        margin-top: 80px;
+        border: none;
+        background: #F7F9FC;
+        color: #8190BF;
+        padding-left: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 105%;
+        background: url(/img/Vector.svg) no-repeat #F7F9FC;
         background-position-x: calc(100% - 15px);
         background-position-y: center;
 
     }
 }
 
-
+ .firstName, .adress, .company{
+    @media (min-width: @mobile-width) {
+        margin-bottom: 10px;
+    }
+    @media (min-width: @tablet-width) {
+        margin-bottom: 0;
+    }
+}
 
 .form__input {
     @media (min-width: @mobile-width) {
-        width: 304px;
+        width: 300px;
         height: 62px;
         border: none;
         background: #F7F9FC;
@@ -212,11 +247,23 @@
         line-height: 105%;
         padding-left: 26px;
         outline: none;
-        margin-left: -57px;
+       
+    }
+    @media (min-width: @tablet-width) {
+        width: 214px;
+        height: 62px;
+        border: none;
+        background: #F7F9FC;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 105%;
+        margin: 0;
+
     }
 
     @media (min-width: @desktop-width) {
-        width: 215px;
+        width: 214px;
         height: 62px;
         border: none;
         background: #F7F9FC;
@@ -243,46 +290,58 @@
 
 .country,
 .message {
-    @media (min-width: @mobile-width) {
-        width: 304px;
+    @media (min-width: @mobile-width) {}
 
+    @media (min-width: @tablet-width) {
+        width: 463px;
     }
-
     @media (min-width: @desktop-width) {
-        width: 478px;
+        width: 463px;
     }
 }
 
 .input__block {
     @media (min-width: @mobile-width) {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0;
+    }
+    @media (min-width: @tablet-width) {
+        gap: 3px;
+        display: flex;
+        flex-direction: row;
+        margin:  0;
     }
 
     @media (min-width: @desktop-width) {
-        position: relative;
-        height: 0;
-        top: -60px;
-        margin: 0;
+        gap: 3px;
+        display: flex;
+        flex-direction: row;
     }
 }
 
-.form__label {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #8190BF;
-}
+// .form__label {
+//     position: absolute;
+//     top: 20px;
+//     left: 20px;
+//     color: #8190BF;
+// }
 
 .privacy__block {
     @media (min-width: @mobile-width) {
         display: flex;
         flex-direction: column;
-        position: relative;
-        left: -29px;
         margin: 0 auto;
         justify-content: center;
         margin-top: 29px;
         align-items: flex-start;
+      
+    }
+    @media (min-width: @tablet-width) {
+        left: -73px;
+        position: relative;
+        margin: 0;
+        top: 40px;
     }
 
     @media (min-width: @desktop-width) {
@@ -291,7 +350,8 @@
         align-items: flex-start;
         position: relative;
         left: -110px;
-        margin:0;
+        margin: 0;
+        top: 40px;
     }
 }
 

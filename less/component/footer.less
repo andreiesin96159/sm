@@ -5,6 +5,12 @@
         bottom: 0px;
         background: #04051F;
     }
+    @media (min-width: @tablet-width) {
+        padding-top: 45px;
+        left: 0px;
+        bottom: 0px;
+        background: #04051F;
+    }
     @media (min-width: @desktop-width) {
     padding-top: 45px;
     left: 0px;
@@ -17,6 +23,13 @@
     @media (min-width: @mobile-width) {
         display: flex;
         flex-direction: column;
+    }
+    @media (min-width: @tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 54px;
+        flex-direction: row;
     }
 
     @media (min-width: @desktop-width) {
@@ -43,6 +56,10 @@
     @media (min-width: @mobile-width) {
         order: 0;
         margin-bottom: 33px;
+        
+    }
+    @media (min-width: @tablet-width) {
+        order: 0;
     }
 
     @media (min-width: @desktop-width) {
@@ -55,7 +72,10 @@
         order: 2;
         padding: 0;
     }
-
+    @media (min-width: @tablet-width) {
+      
+        order: 1;
+    }
     @media (min-width: @desktop-width) {
         margin-left: -375px;
         order: 1;
@@ -70,7 +90,10 @@
         padding: 0;
         margin-bottom: 18px;
     }
-
+    @media (min-width: @tablet-width) {
+        order: 2;
+        flex-direction: column;  
+    }
     @media (min-width: @desktop-width) {
         order: 2;
         flex-direction: column;
@@ -109,11 +132,21 @@
 }
 
 .footer__crumbs {
+   
     @media (min-width: @mobile-width) {
         display: flex;
         align-items: flex-start;
-        max-width: 1305px;
         flex-direction: column;
+        margin-bottom: 10px;
+    }
+    @media (min-width:  @tablet-width) {
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 720px;
+        margin: 0 auto;
+        margin-top: 134px;
+        flex-direction: row;
     }
 
     @media (min-width: @desktop-width) {
@@ -166,4 +199,8 @@
     color: rgba(255, 255, 255, 0.55);
     opacity: 0.7;
     text-decoration: none;
+}
+
+.img__seotlt{
+    margin-bottom:10px ;
 }

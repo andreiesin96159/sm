@@ -1,7 +1,7 @@
 .transact-title {
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 50px;
     line-height: 105%;
     margin-bottom: 29px;
     margin-top: 0;
@@ -9,6 +9,7 @@
     @media (max-width: @tablet-width) {
         font-size: 28px;
     }
+    
 }
 
 .transact-text {
@@ -19,15 +20,17 @@
 
 
     @media (min-width: @mobile-width) {
-        padding: 24px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    @media (min-width: @tablet-width) {
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     @media (min-width: @desktop-width) {
-        max-width: 1305px;
+        padding-top: 5%;
         padding-bottom: 148px;
-        padding-top: 140px;
-        display: block;
-        margin: 0 auto;
     }
 }
 
@@ -63,7 +66,7 @@
     }
 
     @media (min-width: @tablet-width) {
-        width: 335px;
+        width: calc(39% - 65px);
         height: 100px;
         flex-direction: row;
         align-items: center;
@@ -71,7 +74,7 @@
     }
 
     @media (min-width: @desktop-width) {
-        width: 410px;
+        width: calc(33% - 65px);
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;

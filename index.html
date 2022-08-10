@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet/less" type="text/css" href="./less/index.less">
     <link href="http://fonts.cdnfonts.com/css/circe" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -17,8 +17,9 @@
             <div class="header__navigation">
                 <a href="#" class="header__logo"><img src="./img/logo.png" alt="rebit.img"
                         class="header__logo--img header__logo--close"></a>
-                <button class="navigation__toggle navigation__toggle--closed toggle" type="button"><svg class="toggle__span" width="36"
-                        height="11" viewBox="0 0 36 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="navigation__toggle navigation__toggle--closed toggle" type="button"><svg
+                        class="toggle__span" width="36" height="11" viewBox="0 0 36 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path fill="#fff" d="M0 0h36v1H0zM0 10h36v1H0z" />
                     </svg></button>
             </div>
@@ -40,7 +41,7 @@
         </div>
 
 
-        <div class="description">
+        <div class="description container">
             <h1 class="header-description-title">Smarter.<br>
                 Faster.<br>
                 More Reliable.<br>
@@ -205,8 +206,8 @@
 
 
         <section class="contacts">
-            <div class="contacts__all container">
-                <div class="contacts__block">
+            <div class="contacts__all ">
+                <div class="contacts__block ">
                     <h3 class="contacts__title">Get in touch with us </h3>
                     <p class="contacts__description">Whether you look for collaboration or just <br class="mobl"> need
                         to learn more
@@ -217,7 +218,8 @@
                     <ul class="contacts__list">
                         <li class="contacts__items">
                             <p class="contacts__items__name">Address</p>
-                            <p class="contacts__items__info">Masha Poryvaeva str., 11, Moscow, Russia,<br class="mobl"> GSP-6, 107996</p>
+                            <p class="contacts__items__info">Masha Poryvaeva str., 11, Moscow, Russia,<br class="mobl">
+                                GSP-6, 107996</p>
                         </li>
                         <li class="contacts__items">
                             <p class="contacts__items__name">Email:</p>
@@ -229,72 +231,103 @@
                         </li>
                     </ul>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
                 <form action="" class="form">
-
-                    <label for="sorting"></label>
-
-                    <select class="select-control" id="sorting" name="sorting">
-                        <option value="">Choose the theme</option>
-                        <option value=""></option>
-                    </select>
-                    <div class="input__block">
-                        <label for="first" class="form__label"></label>
-                        <input class="firstName form__input" type="text" name="first" id="first"
-                            placeholder="First name *">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="last" class="form__label"></label>
-                        <input class="lastName form__input" type="text" name="last" id="last" placeholder="Last name *">
-                    </div>
-                    <div class="input__block">
-                        <label for="adress" class="form__label"></label>
-                        <input class="adress form__input" type="email" name="adress" id="adress"
-                            placeholder="E-mail adress *">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="phone" class="form__label"></label>
-                        <input class="phone form__input" type="tel" name="phone" id="phone"
-                            placeholder="Phone number *">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="company" class="form__label"></label>
-                        <input class="company form__input" type="text" name="company" id="company"
-                            placeholder="Company *">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="job" class="form__label"></label>
-                        <input class="job form__input" type="text" name="job" id="job"
-                            placeholder="Job title (Optional)">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="country" class="form__label"></label>
-                        <input class="country form__input" type="text" name="country" id="country"
-                            placeholder="Country (Optional)">
-                    </div>
-
-                    <div class="input__block">
-                        <label for="message" class="form__label"></label>
-                        <input class="message form__input" type="text" name="message" id="message"
-                            placeholder="Message *">
-                    </div>
-
-                    <div class="privacy__block">
-                        <div class="privacy__block__input">
-                            <label for="scales" class="privacy__label"></label>
-                            <input type="checkbox" name="scales" id="scales" class="privacy__input">
-                            <span class="control__input"></span>
-                            <span>I agree to website <a href="#">Privacy police</a></span>
+                    <div class="form__div ">
+                        <div class="input__sorting">
+                            <label for="sorting"></label>
+                            <select class="select-control" id="sorting" name="sorting">
+                                <option value="">Choose the theme</option>
+                                <option value=""></option>
+                            </select>
                         </div>
-                        <button class="form__button">Send message</button>
+
+                        <div class="input__block">
+                            <label for="first" class="form__label"></label>
+                            <input class="firstName form__input" type="text" name="first" id="first"
+                                placeholder="First name *">
+
+                            <label for="last" class="form__label"></label>
+                            <input class="lastName form__input" type="text" name="last" id="last"
+                                placeholder="Last name *">
+                        </div>
+
+
+                        <div class="input__block">
+                            <label for="adress" class="form__label"></label>
+                            <input class="adress form__input" type="email" name="adress" id="adress"
+                                placeholder="E-mail adress *">
+
+                            <label for="phone" class="form__label"></label>
+                            <input class="phone form__input" type="tel" name="phone" id="phone"
+                                placeholder="Phone number *">
+                        </div>
+
+
+                        <div class="input__block">
+                            <label for="company" class="form__label"></label>
+                            <input class="company form__input" type="text" name="company" id="company"
+                                placeholder="Company *">
+                            <label for="job" class="form__label"></label>
+                            <input class="job form__input" type="text" name="job" id="job"
+                                placeholder="Job title (Optional)">
+                        </div>
+
+
+
+                        <div class="input__block">
+                            <label for="country" class="form__label"></label>
+                            <input class="country form__input" type="text" name="country" id="country"
+                                placeholder="Country (Optional)">
+                        </div>
+
+                        <div class="input__block">
+                            <label for="message" class="form__label"></label>
+                            <input class="message form__input" type="text" name="message" id="message"
+                                placeholder="Message *">
+                        </div>
+
+                        <div class="privacy__block">
+                            <div class="privacy__block__input">
+                                <label for="scales" class="privacy__label"></label>
+                                <input type="checkbox" name="scales" id="scales" class="privacy__input">
+                                <span class="control__input"></span>
+                                <span>I agree to website <a href="#">Privacy police</a></span>
+                            </div>
+                            <button class="form__button">Send message</button>
+                        </div>
+
                     </div>
+
 
 
                 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
         </section>
 
@@ -343,7 +376,7 @@
 
 
 
-            <img src="./img/seotlt.png" alt="seotlt">
+            <img src="./img/seotlt.png" alt="seotlt" class="img__seotlt">
 
         </section>
 
