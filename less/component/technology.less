@@ -3,25 +3,32 @@
         background: url("./../img/backgroundManMobl.png") no-repeat;
         background-size: 100%;
         margin: 0;
-        height: 757px;
+        height: 648px;
         position: relative;
         padding-top: 20px;
     }
-
+    @media (min-width: @tablet-width){
+        padding-top: 120px;
+        height: 528px;
+    }
     @media (min-width: 1306px) and (max-width:1600px) {
         background: url("./../img/backgroundMan.png") no-repeat;
         margin: 0;
-        height: 550px;
+ 
         position: relative;
-        background-size: 100%;
+
+        padding-bottom: 140px;
+        padding-top: 140px;
     }
 
     @media (min-width: 1601px) {
         background: url("./../img/backgroundMan.png") no-repeat;
         margin: 0;
-        height: 713px;
+      
         position: relative;
-        background-size: 100%;
+  
+        padding-top: 144px;
+        padding-bottom: 144px;
     }
 }
 
@@ -31,7 +38,6 @@
         background: #FFFFFF;
         display: block;
         padding-bottom: 20px;
-        height: 400px;
 
     }
 
@@ -136,6 +142,7 @@
         padding-top: 44px;
         padding-left: 56px;
         padding-right: 56px;
+        margin-top: 0;
 
     }
 }

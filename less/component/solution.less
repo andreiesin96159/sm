@@ -5,10 +5,13 @@
         padding-bottom: 49px;
         padding-top: 49px;
     }
+    @media (min-width:  @tablet-width) {
+        padding-bottom: 0;
+        padding-top: 79px;
+    }
 
     @media (min-width: @desktop-width) {
-
-        padding-bottom: 174px;
+        padding-bottom: 0;
         padding-top: 148px;
     }
 }
@@ -27,10 +30,11 @@
         line-height: 105%;
         width: 300px;
     }
-
+   
     @media (min-width: @desktop-width) {
         font-size: 56px;
         width: 900px;
+        margin-top: 0;
     }
 }
 
@@ -55,6 +59,13 @@
     flex-wrap: wrap;
     gap: 5px;
     padding: 0;
+    margin: 0;
+    @media (min-width:  @tablet-width) {
+        padding-bottom: 79px;
+    }
+    @media (min-width: @desktop-width) {
+        padding-bottom: 149px;
+    }
 }
 
 .options {
