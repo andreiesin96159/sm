@@ -1,25 +1,63 @@
-html, body {
+html,
+body {
   max-width: 100vw;
   width: 100vw;
   overflow-x: hidden;
-  }
+}
+
+@font-face {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Circe'), url('https://fonts.cdnfonts.com/s/13503/CRC25.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Circe'), url('https://fonts.cdnfonts.com/s/13503/CRC55.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Circe'), url('https://fonts.cdnfonts.com/s/13503/CRC55.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Circe'), url('https://fonts.cdnfonts.com/s/13503/CRC55.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Circe', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Circe'), url('https://fonts.cdnfonts.com/s/13503/CRC55.woff2') format('woff2');
+}
+
 
 body {
-    font-family: 'Circe',sans-serif;
-    display: flex;
-    flex-direction: column;
-    max-width: 1920px;
+  font-family: 'Circe', sans-serif;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: @mobile-width) {
+  .container {
+    width: 375px;
     margin: 0 auto;
+    padding: 0 20px;
+  }
 }
 
-
-  @media (min-width: @mobile-width) {
-    .container {
-      width: 375px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-}
 @media (min-width: @tablet-width) {
   .container {
     width: 720px;
@@ -27,16 +65,12 @@ body {
     padding: 0 20px;
   }
 }
+
 @media (min-width:@desktop-width) {
-  .container {  
+  .container {
     // max-width: 1305px;
     width: 1305px;
     margin: 0 auto;
     padding: 0 30px;
   }
 }
-  
-  
-
-  
-
