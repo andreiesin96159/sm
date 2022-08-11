@@ -35,9 +35,9 @@
         border: none;
         outline: none;
         cursor: pointer;
-        position: relative;
-        right: -293px;
         margin-top: 20px;
+        width: 100%;
+        padding-left: calc(70% - 5px);
     }
 
     @media (min-width: @tablet-width) {
@@ -124,6 +124,7 @@
     @media (max-width: @tablet-width) {
         margin: 0;
         padding-left: 20px;
+        width: 100%;
     }
 
     @media (min-width: @tablet-width) {
@@ -190,7 +191,7 @@
     @media (min-width: @desktop-width) {
         color: #FFFFFF;
         background: url("./../img/backgroundGirl.png") no-repeat;
- 
+        background-size: 100%;
         min-height: 743px;
         position: relative;
     }
@@ -229,12 +230,13 @@
 
 .header-description-title {
     @media (min-width: @mobile-width) {
-        font-size: 36px;
+        font-size: 34px;
         font-style: normal;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 100%;
         letter-spacing: 0.03em;
+        
     }
 
     @media (min-width: @tablet-width) {
@@ -261,6 +263,7 @@
         font-weight: 400;
         font-size: 15px;
         line-height: 150%;
+        width: calc(95% - 5px);
     }
 
     @media (min-width: @desktop-width) {
