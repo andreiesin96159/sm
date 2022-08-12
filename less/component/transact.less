@@ -5,10 +5,11 @@
     margin-bottom: 29px;
     margin-top: 0;
     color: #0F1D4A;
-    
+
     @media (max-width: @tablet-width) {
         font-size: 28px;
     }
+
     @media (min-width: @desktop-width) {
         font-size: 47px;
     }
@@ -17,11 +18,11 @@
 
 .transact {
 
-
     @media (min-width: @mobile-width) {
         padding-top: 48px;
         padding-bottom: 48px;
     }
+
     @media (min-width: @tablet-width) {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -40,11 +41,16 @@
     padding: 0;
     margin-top: 44px;
 
+    @media (min-width: @mobile-width) {
+        justify-content: center;
+    }
+
     @media (max-width: @tablet-width) {
         gap: 3px;
     }
-  
+
 }
+
 .transact-text {
     margin: 0;
 
@@ -66,7 +72,7 @@
 .transact-description {
     @media (min-width: @mobile-width) {
         background: #F7F9FC;
-        width: calc(48% - 10px);
+        width: calc(51% - 8px);
         height: 156px;
         display: flex;
         flex-direction: column;
@@ -85,7 +91,7 @@
     }
 
     @media (min-width: @desktop-width) {
-        width:  calc(35% - 63px);
+        width: calc(36% - 59px);
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
@@ -117,18 +123,16 @@
         padding-left: 15px;
         padding-right: 10px;
         font-size: 14px;
-      
+
     }
 
     @media (min-width: @tablet-width) {
         padding-left: 15px;
-      
+
     }
+
     @media (min-width: @desktop-width) {
         padding-left: 24px;
         font-size: 16px;
     }
 }
-
-
-
