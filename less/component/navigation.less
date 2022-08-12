@@ -302,3 +302,21 @@
 .description--none {
     display: none;
 }
+
+.sorting__label{
+    position: relative;
+}
+.sorting{
+    @media (min-width: @mobile-width) {
+        position: absolute;
+        left: 280px;
+        top: 8px;
+        z-index: 2;
+    }
+    @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 455px;
+    top: 8px;
+    z-index: 2;
+    }
+}
